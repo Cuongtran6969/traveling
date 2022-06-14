@@ -1,0 +1,803 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./responsive.css">
+    <!-- <link rel="stylesheet" href="./css/swiper-bundle.min.css"> -->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+   <div class="app">
+       <div class="background">
+         <div class="background-image">
+             <img src="./img/bgmain3.webp" alt="">
+         </div>
+         <div class="bg-info">
+             <div class="partner">
+                <i class='bx bxs-home-smile home'></i>
+                <span>Become a Partner</span>
+                <i class='bx bxs-chevron-down down' ></i>
+             </div>
+             <div class="profile">
+                 <div class="profile-img">
+                     <img src="./img/user.jpeg" alt="">
+                 </div>
+                <span>Mansurul Haque</span>
+                <i class='bx bxs-chevron-down down' ></i>
+             </div>
+         </div>
+         <div class="header">
+           <ul class="header-service">
+               <li>
+                   <a href="" class="">
+                       <i class='bx bxs-plane-take-off icon-service'></i>
+                       <span>Flights</span>    
+                  </a>
+               </li>
+               <li>
+                  <a href="#hotel" class="">
+                      <i class='bx bxs-hotel icon-service' ></i>
+                      <span>Hotel</span>    
+                 </a>
+              </li>
+              <li>
+                  <a href="#best-offer" class="">
+                      <i class='bx bxs-home icon-service' ></i>
+                      <span>Villa</span>    
+                 </a>
+              </li>
+              <li>
+                  <a href="#footer" class="">
+                      <i class='bx bxs-taxi icon-service' ></i>
+                      <span>Taxi</span>    
+                 </a>
+              </li>
+           </ul>
+           <div class="box-trip">
+             <div class="nav-trip">
+              <ul>
+                  <li><a href="" class="">Oneway</a></li>
+                  <li><a href="" class="">Round Trip</a></li>
+                  <li><a href="" class="">Multy city</a></li>
+              </ul>
+             </div>
+             <div class="trip-list">
+                 <div class="trip-item">
+                    <ul>
+                        <li>
+                          <span><i class='bx bxs-location-plus' ></i>Form</span>
+                          <h3>Dhaka, Bangladesh</h3>
+                          <p>Usmani airport, Sylhet</p>
+                        </li>
+                        <li>
+                          <span><i class='bx bxs-location-plus' ></i>Class</span>
+                          <h3>Dilhi, India</h3>
+                          <p>Shuvas chandra bosu airport</p>
+                        </li>
+                        <li>
+                          <span><i class='bx bxs-book'></i>Class</span>
+                          <h3>3 Persons</h3>
+                          <p>Business</p>
+                        </li>
+                    </ul>
+                 </div>
+                 <div class="trip-item">
+                  <ul>
+                      <li>
+                        <span><i class='bx bxs-location-plus' ></i>Departure</span>
+                        <h3>21 Aug’20</h3>
+                        <p>Sunday</p>
+                      </li>
+                      <li>
+                        <span><i class='bx bxs-location-plus' ></i>Return</span>
+                        <h3>21 Aug’20</h3>
+                        <p>Sunday</p>
+                      </li>
+                      <li>
+                        <span><i class='bx bxs-location-plus' ></i>Form</span>
+                        <h3>More</h3>
+                        <p>...</p>
+                      </li>
+                      <button>
+                          search flight
+                      </button>
+                  </ul>
+              </div>
+             </div>
+             
+           </div>
+        </div>
+       </div>
+       <div class="navbar">
+        <div class="logo-content">
+          <div class="logo">
+            <i class='bx bxl-meta'></i>
+            <div class="logo-name">Bookler</div>
+          </div>
+          <i class='bx bx-menu-alt-right' id="menu-btn"></i>
+        </div>
+         <ul class="nav-item">
+            <li>
+              <a href="" class="">
+                 <i class='bx bxs-home' ></i>
+                 <span class="link_name">Home</span>
+              </a>  
+              <span class="tooltip">Home</span>
+            </li>
+            <li>
+             <a href="" class="">
+                <i class='bx bxs-wallet-alt' ></i>
+                <span class="link_name">Wallet</span>
+             </a>  
+             <span class="tooltip">Wallet</span>
+            </li>
+            <li>
+             <a href="" class="">
+                 <i class='bx bxs-user-badge'></i>
+                <span class="link_name">Booking</span>
+             </a>  
+             <span class="tooltip">Booking</span>
+            </li>
+            <li>
+             <a href="" class="">
+                <i class='bx bxs-briefcase' ></i>
+                <span class="link_name">Business</span>
+             </a>  
+             <span class="tooltip">Business</span>
+            </li>
+            <li>
+             <a href="" class="">
+                 <i class='bx bx-world'></i>
+                <span class="link_name">Explore</span>
+             </a> 
+             <span class="tooltip">Explore</span>
+            </li>
+            <li>
+             <a href="" class="">
+                <i class='bx bx-support' ></i>
+                <span class="link_name">Support</span>
+             </a>  
+             <span class="tooltip">Support</span>
+           </li>
+        </ul>
+        <div class="premium__content">
+           <div class="premium_detail">
+             <img src="./img/premium.jpg" alt="">
+             <a href="" class="premium-title">
+               <h3>Get Premium</h3>
+               <p>$39/m</p>
+             </a>
+           </div>
+           <i class='bx bxs-chevron-right'></i>
+        </div>
+       </div>
+      
+       <div class="slider-bar swiper">
+           <div class="slider-title">Trip Package</div>
+             <div class="slider-list swiper-wrapper">
+               <div class="slider-item swiper-slide">
+                 <div class="slider-image">
+                   <img src="./img/thailan.jpg" id="slider-img" alt="">
+                   <div class="info-item">
+                     <div class="price-item">
+                       <h2>Start From</h2>
+                       <h3>$599</h3>
+                     </div>
+                     <div class="place-item">
+                       <div class="place-img">
+                         <a href="" class="">
+                           <img src="./img/villa.jpg" alt="">
+                         </a>
+                       </div>
+                       <div class="name-item">
+                         <h1>Thailand</h1>
+                         <h3>Holiday</h3>
+                       </div>
+                     </div>
+                   </div>
+                 </div>
+               </div>
+               <div class="slider-item swiper-slide">
+                 <div class="slider-image">
+                   <img src="./img/greece.jpg" id="slider-img" alt="">
+                   <div class="info-item">
+                     <div class="price-item">
+                       <h2>Start From</h2>
+                       <h3>$599</h3>
+                     </div>
+                     <div class="place-item">
+                       <div class="place-img">
+                         <a href="" class="">
+                           <img src="./img/villa2.jpg" alt="">
+                         </a>
+                       </div>
+                       <div class="name-item">
+                         <h1>Greece</h1>
+                         <h3>Holiday</h3>
+                       </div>
+                     </div>
+                   </div>
+                 </div>
+               </div>
+               <div class="slider-item swiper-slide">
+                 <div class="slider-image">
+                   <img src="./img/nepal.jpg" id="slider-img" alt="">
+                   <div class="info-item">
+                     <div class="price-item">
+                       <h2>Start From</h2>
+                       <h3>$599</h3>
+                     </div>
+                     <div class="place-item">
+                       <div class="place-img">
+                         <a href="" class="">
+                           <img src="./img/villa3.jpg" alt="">
+                         </a>
+                       </div>
+                       <div class="name-item">
+                         <h1>Nelpal</h1>
+                         <h3>Holiday</h3>
+                       </div>
+                     </div>
+                   </div>
+                 </div>
+               </div>
+               <div class="slider-item swiper-slide">
+                 <div class="slider-image">
+                   <img src="./img/nepal.jpg" id="slider-img" alt="">
+                   <div class="info-item">
+                     <div class="price-item">
+                       <h2>Start From</h2>
+                       <h3>$599</h3>
+                     </div>
+                     <div class="place-item">
+                       <div class="place-img">
+                         <a href="" class="">
+                           <img src="./img/vietnam3.jpg" alt="">
+                         </a>
+                       </div>
+                       <div class="name-item">
+                         <h1>Nelpal</h1>
+                         <h3>Holiday</h3>
+                       </div>
+                     </div>
+                   </div>
+                 </div>
+               </div>
+           </div>
+       </div>
+       <div class="special-trip">
+         <div class="special-title">Special Offer</div>
+         <div class="special-list">
+           <div class="special-item">
+             <div class="special-image">
+               <img src="./img/viennam1.jpg" alt="">
+             </div>
+             <div class="special-info">
+               <div class="discount">
+                 <h3>Cittytuch</h3>
+                 <h1>Up to $559 discount</h1>
+                 <span>Domestic flight</span>
+               </div>
+               <div class="booking">
+                 <div class="qr-code">
+                   <h3>Cupon:</h3>
+                   <h2> dhshjab09d</h2>
+                 </div>
+                 <a href="" class="">
+                   <button>Book Now</button>
+                 </a>
+               </div>
+             </div>
+           </div>
+           <div class="special-item">
+            <div class="special-image">
+              <img src="./img/vietnam2.jpg" alt="">
+            </div>
+            <div class="special-info">
+              <div class="discount">
+                <h3>Cittytuch</h3>
+                <h1>Up to $559 discount</h1>
+                <span>Domestic flight</span>
+              </div>
+              <div class="booking">
+                <div class="qr-code">
+                  <h3>Cupon:</h3>
+                  <h2> dhshjab09d</h2>
+                </div>
+                <a href="" class="">
+                  <button>Book Now</button>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="special-item">
+            <div class="special-image">
+              <img src="./img/vietnam3.jpg" alt="">
+            </div>
+            <div class="special-info">
+              <div class="discount">
+                <h3>Cittytuch</h3>
+                <h1>Up to $559 discount</h1>
+                <span>Domestic flight</span>
+              </div>
+              <div class="booking">
+                <div class="qr-code">
+                  <h3>Cupon:</h3>
+                  <h2> dhshjab09d</h2>
+                </div>
+                <a href="" class="">
+                  <button>Book Now</button>
+                </a>
+              </div>
+            </div>
+          </div>
+         </div>
+       </div>
+       <div id="hotel">
+          <div class="hotel-navbar">
+              <div class="hotel-content">
+                 <div class="name-content">
+                    <h1>Hotel</h1>
+                 </div>
+                 <div class="result-content">
+                    <h2>Total</h2>
+                    <a href="" class="">126 result</a>
+                 </div>
+              </div>
+              <div class="hotel-menu">
+                  <div class="hotel-popular menu-item">Popular</div>
+                  <div class="hotel-rate menu-item">Guest Ratings</div>
+                  <div class="hotel-price">
+                    <div class="price-title">Price</div>
+                    <div class="price-control">
+                      <i class='bx bxs-up-arrow' ></i>
+                      <i class='bx bxs-down-arrow' ></i>
+                    </div>
+                  </div>  
+                  <div class="hotel-map">
+                   <a href="" class="">Map View</a>
+                  </div>
+              </div>
+          </div>
+          <div class="hotel__list">
+            <div class="hotel__item">
+              <div class="hotel-img">
+                <img src="./img/resort1.jpg" alt="">
+              </div>
+              <div class="hotel__info">
+                 <div class="hotel__info-place">
+                   <div class="hotel__info-header">
+                       <div class="place-name">Taj Fort Aguada Resort & Spa Candolin, Goa</div>
+                       <div class="number-rate">
+                         4.9<i class='bx bxs-star' ></i>
+                         <div class="rating-layout">
+
+                         </div>
+                      </div>
+                   </div>
+                   <div class="place-location">
+                     <div class="location-name">Near railway station, Shirdi</div>
+                     <div class="location-map">
+                       <a href="" class="">Map View</a>
+                     </div>
+                   </div>
+                   <ul class="info-room">
+                    <li><i class='bx bxs-parking' ></i>Parking</li>
+                    <li><i class='bx bxs-bath' ></i>Attached Athroom</li>
+                    <li><i class='bx bxs-cctv' ></i>CCTV Cameras</li>
+                    <li><i class='bx bx-wifi' ></i>Wifi</li>
+                  </ul>
+                 </div>
+                 <div class="hotel__info-price">
+                   <div class="price-saling">
+                     <span>25% off</span>
+                     <h1>$473</h1>
+                   </div>
+                   <ul class="book-contact">
+                      <li><a href="" class="view-detail">View detail</a></li>
+                      <li><a href="" class="book-now">Book Now</a></li>
+                   </ul>
+                 </div>
+
+              </div>
+            </div>
+            <div class="hotel__item">
+              <div class="hotel-img">
+                <img src="./img/resort2.jpg" alt="">
+              </div>
+              <div class="hotel__info">
+                 <div class="hotel__info-place">
+                   <div class="hotel__info-header">
+                       <div class="place-name">Taj Fort Aguada Resort & Spa Candolin, Goa</div>
+                       <div class="number-rate">
+                         4.9<i class='bx bxs-star' ></i>
+                         <div class="rating-layout">
+
+                         </div>
+                      </div>
+                   </div>
+                   <div class="place-location">
+                     <div class="location-name">Near railway station, Shirdi</div>
+                     <div class="location-map">
+                       <a href="" class="">Map View</a>
+                     </div>
+                   </div>
+                   <ul class="info-room">
+                    <li><i class='bx bxs-parking' ></i>Parking</li>
+                    <li><i class='bx bxs-bath' ></i>Attached Athroom</li>
+                    <li><i class='bx bxs-cctv' ></i>CCTV Cameras</li>
+                    <li><i class='bx bx-wifi' ></i>Wifi</li>
+                  </ul>
+                 </div>
+                 <div class="hotel__info-price">
+                   <div class="price-saling">
+                     <span>25% off</span>
+                     <h1>$473</h1>
+                   </div>
+                   <ul class="book-contact">
+                      <li><a href="" class="view-detail">View detail</a></li>
+                      <li><a href="" class="book-now">Book Now</a></li>
+                   </ul>
+                 </div>
+
+              </div>
+            </div>
+            <div class="hotel__item">
+              <div class="hotel-img">
+                <img src="./img/resort3.jpg" alt="">
+              </div>
+              <div class="hotel__info">
+                 <div class="hotel__info-place">
+                   <div class="hotel__info-header">
+                       <div class="place-name">Taj Fort Aguada Resort & Spa Candolin, Goa</div>
+                       <div class="number-rate">
+                         4.9<i class='bx bxs-star' ></i>
+                         <div class="rating-layout">
+
+                         </div>
+                      </div>
+                   </div>
+                   <div class="place-location">
+                     <div class="location-name">Near railway station, Shirdi</div>
+                     <div class="location-map">
+                       <a href="" class="">Map View</a>
+                     </div>
+                   </div>
+                   <ul class="info-room">
+                    <li><i class='bx bxs-parking' ></i>Parking</li>
+                    <li><i class='bx bxs-bath' ></i>Attached Athroom</li>
+                    <li><i class='bx bxs-cctv' ></i>CCTV Cameras</li>
+                    <li><i class='bx bx-wifi' ></i>Wifi</li>
+                  </ul>
+                 </div>
+                 <div class="hotel__info-price">
+                   <div class="price-saling">
+                     <span>25% off</span>
+                     <h1>$473</h1>
+                   </div>
+                   <ul class="book-contact">
+                      <li><a href="" class="view-detail">View detail</a></li>
+                      <li><a href="" class="book-now">Book Now</a></li>
+                   </ul>
+                 </div>
+
+              </div>
+            </div>
+            <div class="hotel__item">
+              <div class="hotel-img">
+                <img src="./img/resort4.jpg" alt="">
+              </div>
+              <div class="hotel__info">
+                 <div class="hotel__info-place">
+                   <div class="hotel__info-header">
+                       <div class="place-name">Taj Fort Aguada Resort & Spa Candolin, Goa</div>
+                       <div class="number-rate">
+                         4.9<i class='bx bxs-star' ></i>
+                         <div class="rating-layout">
+
+                         </div>
+                      </div>
+                   </div>
+                   <div class="place-location">
+                     <div class="location-name">Near railway station, Shirdi</div>
+                     <div class="location-map">
+                       <a href="" class="">Map View</a>
+                     </div>
+                   </div>
+                   <ul class="info-room">
+                    <li><i class='bx bxs-parking' ></i>Parking</li>
+                    <li><i class='bx bxs-bath' ></i>Attached Athroom</li>
+                    <li><i class='bx bxs-cctv' ></i>CCTV Cameras</li>
+                    <li><i class='bx bx-wifi' ></i>Wifi</li>
+                  </ul>
+                 </div>
+                 <div class="hotel__info-price">
+                   <div class="price-saling">
+                     <span>25% off</span>
+                     <h1>$473</h1>
+                   </div>
+                   <ul class="book-contact">
+                      <li><a href="" class="view-detail">View detail</a></li>
+                      <li><a href="" class="book-now">Book Now</a></li>
+                   </ul>
+                 </div>
+
+              </div>
+            </div>
+            <div class="hotel__item">
+              <div class="hotel-img">
+                <img src="./img/resort5.jpg" alt="">
+              </div>
+              <div class="hotel__info">
+                 <div class="hotel__info-place">
+                   <div class="hotel__info-header">
+                       <div class="place-name">Taj Fort Aguada Resort & Spa Candolin, Goa</div>
+                       <div class="number-rate">
+                         4.9<i class='bx bxs-star' ></i>
+                         <div class="rating-layout">
+
+                         </div>
+                      </div>
+                   </div>
+                   <div class="place-location">
+                     <div class="location-name">Near railway station, Shirdi</div>
+                     <div class="location-map">
+                       <a href="" class="">Map View</a>
+                     </div>
+                   </div>
+                   <ul class="info-room">
+                    <li><i class='bx bxs-parking' ></i>Parking</li>
+                    <li><i class='bx bxs-bath' ></i>Attached Athroom</li>
+                    <li><i class='bx bxs-cctv' ></i>CCTV Cameras</li>
+                    <li><i class='bx bx-wifi' ></i>Wifi</li>
+                  </ul>
+                 </div>
+                 <div class="hotel__info-price">
+                   <div class="price-saling">
+                     <span>25% off</span>
+                     <h1>$473</h1>
+                   </div>
+                   <ul class="book-contact">
+                      <li><a href="" class="view-detail">View detail</a></li>
+                      <li><a href="" class="book-now">Book Now</a></li>
+                   </ul>
+                 </div>
+
+              </div>
+            </div>
+          </div>
+       </div>
+       <div id="best-offer">
+         <div class="header-offer">
+           <div class="offer-title">Best Offer</div>
+           <div class="offer-view">
+               <a href="" class="">View all</a>
+            </div>
+         </div>
+         <div class="best__list">
+              <a href="" class="best__item">
+                <div class="best__item-image">
+                  <img src="./img/Alexandria.jpg" alt="">
+                </div>
+                <div class="best__item-name">
+                  <h3>Alexanderia</h3>
+                  <span>Best Hotel, Villa</span>
+                </div>
+              </a>
+              <a href="" class="best__item">
+                <div class="best__item-image">
+                  <img src="./img/Astana.jpg" alt="">
+                </div>
+                <div class="best__item-name">
+                  <h3>Astana</h3>
+                  <span>Best Hotel, Villa</span>
+                </div>
+              </a>
+              <a href="" class="best__item">
+                <div class="best__item-image">
+                  <img src="./img/Calgary.jpg" alt="">
+                </div>
+                <div class="best__item-name">
+                  <h3>Calgary</h3>
+                  <span>Best Hotel, Villa</span>
+                </div>
+              </a>
+              <a href="" class="best__item">
+                <div class="best__item-image">
+                  <img src="./img/Fairbanks.jpg" alt="">
+                </div>
+                <div class="best__item-name">
+                  <h3>Fairbanks</h3>
+                  <span>Best Hotel, Villa</span>
+                </div>
+              </a>
+              <a href="" class="best__item">
+                <div class="best__item-image">
+                  <img src="./img/Jackson.jpg" alt="">
+                </div>
+                <div class="best__item-name">
+                  <h3>Jackson</h3>
+                  <span>Best Hotel, Villa</span>
+                </div>
+              </a>
+              <a href="" class="best__item">
+                <div class="best__item-image">
+                  <img src="./img/Madison.jpg" alt="">
+                </div>
+                <div class="best__item-name">
+                  <h3>Madison</h3>
+                  <span>Best Hotel, Villa</span>
+                </div>
+              </a>
+              <a href="" class="best__item">
+                <div class="best__item-image">
+                  <img src="./img/Monterrey.jpg" alt="">
+                </div>
+                <div class="best__item-name">
+                  <h3>Monterrey</h3>
+                  <span>Best Hotel, Villa</span>
+                </div>
+              </a>
+              <a href="" class="best__item">
+                <div class="best__item-image">
+                  <img src="./img/Paloalto.jpg" alt="">
+                </div>
+                <div class="best__item-name">
+                  <h3>Palo Alto</h3>
+                  <span>Best Hotel, Villa</span>
+                </div>
+              </a>
+              <a href="" class="best__item">
+                <div class="best__item-image">
+                  <img src="./img/Seville.jpg" alt="">
+                </div>
+                <div class="best__item-name">
+                  <h3>Seville</h3>
+                  <span>Best Hotel, Villa</span>
+                </div>
+              </a>
+         </div>
+       </div>
+       <div class="download-app">
+         <div class="download-bg">
+           <!-- <img src="./img/bgad.jpg" alt=""> -->
+           <div class="download-content">
+              <div class="mobile-screenshot-inner">
+                  <img src="./img/iphoneapp.png" alt="">
+              </div>
+              <div class="content-download">
+                 <div class="download-title">
+                  Your all-in-one travel app.
+                 </div>
+                 <div class="download-text">
+                  Book flights, hotels, trains & rental cars anywhere in the world in just seconds. Get real-time flight updates, travel info,
+                   exclusive deals, and 30% more Trip Coins only on the app!
+                 </div>
+                 <div class="download-layout">
+                     <div class="online-sms">
+                        <div class="online-user">
+                            <ul class="online-ads__tabs">
+                              <li class="online-ads__tabs-item">SMS</li>
+                              <li class="online-ads__tabs-item">Email</li>
+                            </ul>
+                        </div>
+                        <div class="online-ads__tip">
+                          Enter your phone number to receive a text with a link to download the app.
+                        </div>
+                        <div class="online-ads__phone">
+                          <div class="selected-box">
+                                <span class="num">(+84)</span>
+                                <i class='bx bxs-down-arrow'></i>
+                          </div>
+                          <div class="number-wrapper">
+                              <input type="text" class="number-input" placeholder="Mobile number">
+                          </div>
+                        </div>
+                        <div class="online-ads__inputs">
+                          <button>
+                            <span class="online-ads__inputs-placeholder">Send App Link</span>
+                          </button>
+                        </div>
+                     </div>
+                     <div class="online__divider">
+                       <span class="online__divider-inertext">or</span>
+                     </div>
+                     <div class="online__apps-marker">
+                              <a href="" class="app-marker">
+                                <img src="./img/appstore.png" alt="app store">
+                              </a>
+                              <a href="" class="app-marker">
+                                <img src="./img/appgoogleplay.png" alt="google play">
+                              </a>
+                     </div>
+                     <div class="online__qrcode">
+                        <img src="./img/qrapp.png" alt="">
+                     </div>
+                 </div>
+              </div>
+           </div>
+         </div>
+       </div>
+       <div id="footer">
+            <div class="footer-row">
+                <div class="footer-col">
+                      <div class="logo-footer">
+                        <i class='bx bxl-meta'></i>
+                        <h1>Bookler</h1>
+                      </div>
+                      <p class="">Trip.com is a rapidly-growing global online travel agency, Trip.com is here to help you plan the perfect trip. Whether you're going on holiday, taking a business trip, or looking to set up a corporate travel account,
+                         Trip.com is here to help you travel the world with cheap flights, 
+                         discount hotels, and train tickets.
+                        </p>
+               </div>
+               <div class="footer-col">
+                   <h3>office</h3>
+                   <p>ITPL Road</p>
+                   <p>Whitefield, Bangalore</p>
+                   <p>Karnataka, PIN 560066, Inda</p>
+                   <p class="email-id">Cuongtvhe176258@fpt.edu.vn</p>
+                   <a href="tel:0383459560" class="phone-contact"><span>hotline: </span> 0383459560</a>
+               </div>
+               <div class="footer-col">
+                 <h3>Links</h3>
+                 <ul>
+                   <li><a href="" class="">Home</a></li>
+                   <li><a href="" class="">Service</a></li>
+                   <li><a href="" class="">About Us</a></li>
+                   <li><a href="" class="">Features</a></li>
+                   <li><a href="" class="">Contact</a></li>
+                 </ul>
+               </div>
+               <div class="footer-col">
+                 <h3>Newsletter</h3>
+                 <form>
+                   <i class='bx bx-envelope footer__icon-email' ></i>
+                   <input type="email" placeholder="Enter your email id" required>
+                   <button type="submit"><i class='bx bx-right-arrow-alt footer__icon-right'></i></button>
+                  </form>
+                  <div class="social-icons">
+                    <a href="https://www.facebook.com/profile.php?id=100050512032458" class="">
+                      <i class='bx bxl-facebook-circle'></i>
+                    </a>
+                    <a href="https://www.facebook.com/profile.php?id=100050512032458" class="">
+                      <i class='bx bxl-twitter' ></i>
+                    </a>
+                    <a href="https://www.facebook.com/profile.php?id=100050512032458" class="">
+                      <i class='bx bxl-whatsapp-square' ></i>
+                    </a>
+                    <a href="https://www.instagram.com/koivndev/" class="">
+                      <i class='bx bxl-instagram-alt' ></i>
+                    </a>
+                  </div>
+               </div>
+               <div class="footer-col">
+                <div class="footer__apps">
+                   <div class="footer__apps-marker">
+                      <a href="" class="download__apps-link">
+                         <img src="./img/appstore.png" alt="app store">
+                      </a>
+                      <a href="" class="download__apps-link">
+                         <img src="./img/appgoogleplay.png" alt="google play">
+                     </a>
+                  </div>
+                  <div class="footer__qrcode">
+                    <img src="./img/qrapp.png" alt="">
+                  </div>
+                </div>
+               </div>
+            </div>
+            <div class="copyright">
+              <p class="text__copyright">Copyright © 2022 Trip.com Travel Singapore Pte. fb Cường Trần
+              </p>
+            </div>
+   </div>
+</body>
+<script src="./js/swiper-bundle.min.js">
+
+</script>
+<script src="./js/app.js"></script>
+</html>
